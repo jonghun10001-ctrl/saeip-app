@@ -1,0 +1,29 @@
+/*
+  디자인 토큰 — 색·모서리·폰트는 전부 여기서만 정한다.
+  디자이너는 이 파일의 값만 바꾸면 앱 전체 색이 바뀐다.
+  (현재 값은 임시 초록 팔레트. 그린테라피 로고·색상 자료가 오면 교체)
+
+  컴포넌트에서는 Tailwind 클래스로 쓴다: bg-primary, text-muted, rounded-card 등
+  (연결은 src/index.css 의 @theme inline 블록)
+*/
+:root {
+  /* 색 */
+  --app-primary: #2e6b4f;
+  --app-primary-soft: #e3efe8;
+  --app-on-primary: #ffffff;
+  --app-accent: #f2b544;
+  --app-bg: #f6f8f5;
+  --app-surface: #ffffff;
+  --app-text: #1f2a24;
+  --app-text-muted: #6b7a71;
+  --app-border: #dfe6e1;
+  --app-danger: #c0392b;
+
+  /* 모서리 */
+  --app-radius-card: 16px;
+  --app-radius-button: 12px;
+  --app-radius-pill: 999px;
+
+  /* 폰트 */
+  --app-font: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+}

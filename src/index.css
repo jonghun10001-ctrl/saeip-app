@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+/* tokens.css 의 변수를 Tailwind 클래스 이름으로 연결 (값은 tokens.css 에서만 수정) */
+@theme inline {
+  --color-primary: var(--app-primary);
+  --color-primary-soft: var(--app-primary-soft);
+  --color-on-primary: var(--app-on-primary);
+  --color-accent: var(--app-accent);
+  --color-bg: var(--app-bg);
+  --color-surface: var(--app-surface);
+  --color-text: var(--app-text);
+  --color-muted: var(--app-text-muted);
+  --color-line: var(--app-border);
+  --color-danger: var(--app-danger);
+  --radius-card: var(--app-radius-card);
+  --radius-button: var(--app-radius-button);
+  --radius-pill: var(--app-radius-pill);
+  --font-sans: var(--app-font);
+}
+
+html,
+body {
+  background: var(--app-bg);
+  color: var(--app-text);
+  font-family: var(--app-font);
+  overflow-x: hidden;
+}
