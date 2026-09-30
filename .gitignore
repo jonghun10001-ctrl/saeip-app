@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 비밀키 (DB 키 등) — 절대 커밋하지 않기. 값 형식은 .env.example 참고
+.env
+.env.*
+!.env.example
